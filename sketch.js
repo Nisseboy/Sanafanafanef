@@ -18,6 +18,10 @@ function setup() {
   for (let i = 0; i < foodCount; i++) {
     foods.push(new Food());
   }
+  if (localStorage.aaa == "aaa") {
+    let b = createButton("Grow");
+    b.mousePressed(()=>{snakes[0].grow(1)});
+  }
 }
 
 function draw() {

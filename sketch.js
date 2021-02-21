@@ -45,9 +45,6 @@ function draw() {
         break;
     }
   }
-  if (mouseIsPressed) {
-    snakes[0].a = atan2(mouseY - snakes[0].head.y, mouseX - snakes[0].head.x);
-  }
 }
 
 function distanceToSnake(x, y) {

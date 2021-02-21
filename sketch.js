@@ -7,6 +7,8 @@ let foodCount = 20;
 let defaultLength = 3;
 let fColor = [220, 0, 0];
 
+let cheats = localStorage.aaa == "aaa";
+
 this.focus();
 
 function setup() {
@@ -17,11 +19,6 @@ function setup() {
   }
   for (let i = 0; i < foodCount; i++) {
     foods.push(new Food());
-  }
-  if (localStorage.aaa == "aaa") {
-    let b = createButton("Grow");
-    b.position(0,0);
-    b.mousePressed(()=>{snakes[0].grow(1)});
   }
 }
 
@@ -42,6 +39,10 @@ function draw() {
         break;
       case 39: //Right
         snakes[0].a += TWO_PI / 60;
+        break;
+      case 38: //grow
+        if (cheats)
+          snakes[0].grow();
         break;
     }
   }

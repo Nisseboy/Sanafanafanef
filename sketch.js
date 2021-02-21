@@ -42,7 +42,7 @@ function draw() {
         break;
       case 38: //grow
         if (cheats)
-          snakes[0].grow();
+          snakes[0].grow(1);
         break;
     }
   }

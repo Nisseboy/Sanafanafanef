@@ -20,6 +20,7 @@ function setup() {
   }
   if (localStorage.aaa == "aaa") {
     let b = createButton("Grow");
+    b.position(0,0);
     b.mousePressed(()=>{snakes[0].grow(1)});
   }
 }

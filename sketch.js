@@ -19,6 +19,7 @@ function setup() {
     foods.push(new Food());
   }
   if (localStorage.aaa == "aaa") {
+    print("hrm");
     let b = createButton("Grow");
     b.position(0,0);
     b.mousePressed(()=>{snakes[0].grow(1)});
